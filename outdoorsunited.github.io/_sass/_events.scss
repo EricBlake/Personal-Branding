@@ -1,0 +1,218 @@
+
+.event_wrapper{
+
+
+    .tab-wrapper {
+      overflow: hidden;
+      box-sizing:border-box;
+
+     
+
+      .tab {
+        color: $font_color;
+        padding: 1em;
+        text-decoration: none;
+        float:left;
+        margin-bottom: 2em;
+        border:1px solid $font_color;
+        border-radius:5px;
+
+       
+
+
+      }
+
+     
+
+      .tab:hover{
+        background-color:$button_alt_hover;
+      }
+
+      
+
+
+      .tab-content {
+
+        overflow: hidden;
+        line-height: 1.6;
+        padding: 1em;
+        display: none;
+        clear: both;
+        box-sizing:border-box;
+        background-color:$background_white;
+
+          //-------------------------filter options---------------------//
+       .event_type{
+             width: 45%;
+             margin:0 auto;
+              color:$font_color;
+              display: inline-block;
+              
+
+            }
+        .event_date{
+              width: 45%;
+              margin:1%;
+             margin:0 auto;
+          color: $font_color;
+          display: inline-block;
+          overflow: auto;
+          
+        }
+
+        .number_people{
+          width: 45%;
+             margin:0 auto;
+          color: $font_color;
+          display: inline-block;
+          
+          
+        }
+
+        .distance{
+          width: 48%;
+             margin:0 auto;
+          color: $font_color;
+          display: inline-block;
+         
+          
+        }
+  //---------------------------------------rec events on events page
+      
+
+
+      }//closing tab content
+
+    .active {
+      display: block;
+      background-color:$background_white;
+      color: $font_color;
+
+
+    }
+
+
+    }//closing tab-wrapper//
+
+
+
+}//closing event wrapper//
+
+.event_side{
+
+
+
+  }//closing dash_side tag
+
+
+   .upcoming_wrapper{
+    background-color:$background_white;
+    overflow: hidden;
+    
+    h2{
+      font-family: $body_font;
+      margin:2%;
+    }
+
+        .upcoming_events{
+          margin:2%;
+          clear: both;
+          
+
+          .upcoming_img{
+
+            width: 25%;
+            float:left;
+            img{
+            width: 100%;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+             }
+
+
+          }
+
+          .upcoming_cont{
+            padding-left:0.5em;
+            float:left;
+
+
+          }
+
+          .find_more_button{
+            clear: both;
+            text-decoration:none;
+            font-family: $body_font;
+          }
+
+        }//closing upcoming_events
+
+    }//upcoming_wrapper
+
+
+//--------------------------------------------Event breakpoint 1-----//
+
+@media(min-width:700px){
+
+
+
+  .event_wrapper{
+      .tab-wrapper {
+        width: 90%;
+        margin:0 auto;
+       
+        
+
+      .active {
+          border-radius:5px;
+          box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+          
+        }
+
+      }//closing tab_wrapper
+
+}//closing event_wrapper
+
+.event_side{
+    box-sizing:border-box;
+    overflow: hidden;
+    margin:0 auto;
+    width:90%;
+  
+
+  .upcoming_wrapper{
+    width: 100%;
+    float:left;
+    margin:0 auto;
+    border-radius:5px;
+    margin:1%;
+    background-color:$event_color;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+
+  }
+
+  }//closing event side
+    
+
+}//closing media tag
+
+
+
+@media(min-width:950px){
+
+.event_wrapper{
+    max-width: 1000px;
+    margin:0 auto;
+}//closing event_wrapper
+
+
+}//closing media 
+
+
+
+
+
+
+
+
+
+
